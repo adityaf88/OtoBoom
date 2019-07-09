@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">
+      aside {
+        width: 240px;
+        float: right;
+        padding: 0px 20px 0px 20px;
+        }
+      aside section a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid red;
+      color: black;}
+      aside section a:hover {
+        color: #985d6a;
+        background-color: white;}
+      a {
+        color: #de6581;
+        text-decoration: none;}
+      .text1{
+        color: white;
+        padding-left: 30px;
+        font-size: 19px;
+      }
+      .text2{
+        padding-left: 70px;
+
+      }
+      .slide{
+      margin: 50px auto;
+      width: 800px;
+      height: 500px;
+    }
+    #kotak{
+      height:470; 
+      width:1000;
+    }
+    .sliderf > div{
+      position: absolute;
+    }
+    img{
+      width: 1000px;
+      height: 470px;
+    }
+    /*.carousel-inner > .item > img {
+  width:1100px;
+  height:340px;
+}*/
+.carousel {
+  width:999px;
+  height:360px;
+}
+.atas_bawah{
+  padding-top: 70px;
+  padding-left: 55px;
+}
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>OtoBoom.com</title>
+    <style type="text/css">
+   .open{
+      font-family: 'Cairo', sans-serif;
+         }
+    .sh{
+      font-family: 'Shadows Into Light', cursive;
+    }     
+   .backTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;  
+  padding: 1em;
+  margin: 1em;
+  background: #E8E8E8;
+  border: 2px solid #000;
+}
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(".sliderf > div:gt(0)").hide();
+        setInterval(function() {
+        $('.sliderf > div:first')
+          .fadeOut(100).next().fadeIn(900).end().appendTo('.sliderf');
+        }, 3000);
+    });
+  </script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    var $backToTop = $(".backTop");
+    $backToTop.hide();
+    $(window).on('scroll', function() {
+      if ($(this).scrollTop() > 100) {
+        $backToTop.fadeIn();
+      } else {
+        $backToTop.fadeOut();
+      }
+    });
+
+    $backToTop.on('click', function(e) {
+      $("html, body").animate({scrollTop: 0}, 500);
+    });
+</script>
+
+
+  </head>
+  <body id="page-top" background="img/Hitamlegam.jpg">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+  <a class="navbar-brand" href="#page-top">OtoBoom.com</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Index1.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="news.html">NEWS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="tips&trick.html">TIPS & TRICK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="Riview&Video.html">RIVIEW & VIDEO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="Galery.html">GALERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="About.html">ABOUT</a>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid" >
+  <aside>
+        <section class="popular">
+       
+          <h2 class="atas">   <p class="open">POPULER </h2>
+          <a href="Pemotor.html">Pemotor tewas oleh geng motor</a>
+          <a href="">Kelasemen MotoGP</a>
+          <a href="">Rumah dibobol maling saat lebaran</a>
+          <a href="">Gerbnag TOL Cikarang Utama tidak diperasikan</a>
+        </section>
+        <section class="contact-details">
+          <h2 class="kontak">Kontak</h2>
+          <p class="nomor">Mahendra Eko Saputro<br />
+             +6282299053023
+        </section>
+  </aside>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/fitur-new-vario-150-2018.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/Vario_2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/Vario_3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  <div class="container img-left text-button">
+    <div class="atas_bawah">
+      <a href="Vario.html">   <p class="open">Vario 150 Keluaran 2019 dengan Berbagai Fitur terbaru</a>  
+    </div>
+   
+    <!-- <div class="sliderf">
+      <div><img src="img/fitur-new-vario-150-2018.jpg"></div>
+      <div><img src="img/Vario_2.jpg"></div>
+      <div><img src="img/Vario_3.jpg"></div>  
+    </div>   -->
+ 
+  
+     
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+     <div class="card">
+        <img src="img/Pajero1.jpg" style="width: 253px; height: 250px;"class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            <a href="">Pajero diminati Oleh Keluarga Indonesia</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-3">
+      <div class="card">
+        <img src="img/Xpander.jpg" style="width: 253px; height: 250px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            <a href="">Xpander Menjadi MPV Mahal?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-3">
+      <div class="card">
+        <img src="img/800.jfif" style="width: 253px; height: 250px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            <a href="">New Livina Menjadi Pesaing Xpander</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-3">
+      <div class="card">
+        <img src="img/Honda.jpg" style="width: 253px; height: 250px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+          <a href="">Peluncuran Honda CB150R Exmotion</a> 
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br>
+<div class="text1">
+  <p align="center">ARTIKEL TERKAIT</p>
+</div>
+<div class="text2">
+  <p align="center" class="open">
+    <a href="" style="color: red;">Waspada, Ramai Lagi Modus Begal Motor Pura-pura Jadi Korban Pemukulan, Incar Pemotor Dibawah Umur</a>
+  </p>
+  <hr size="2px" width="80%" align="center" color="white" padding>
+  <p align="center" class="open">
+    <a href="" style="color: red;">HOME MOTORACE
+Menang MotoGP Belanda 2019, Vinales Kasih Kado Istimewa Buat Yamaha</a>
+  </p>
+  <hr size="2px" width="80%" align="center" color="white" padding>
+  <p align="center" class="open">
+    <a href="" style="color: red;">HOME MOTOLIFE
+All-New EE 5, Motor Mini Trail Listrik Husqvarna Terbaru, Tenaga Besar</a>
+  </p>
+  <hr size="2px" width="80%" align="center" color="white" padding>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="backTop">Back to Top</div>
+  </body>
+</html>
